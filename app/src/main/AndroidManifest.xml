@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.azra.putujmozajedno" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light">
+
+        <activity
+            android:name=".Login"
+            android:label="@string/app_name"
+            android:noHistory="true" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Main Screen Activity -->
+        <activity
+            android:name=".MainScreenActivity"
+            android:label="Putujmo zajedno" >
+        </activity>
+
+        <!-- All Product Activity -->
+        <activity
+            android:name=".SveVoznjeActivity"
+            android:label="Sve vožnje" >
+        </activity>
+
+        <!-- Add Product Activity -->
+
+        <activity
+            android:name=".NoviKorisnikActivity"
+            android:label="Registracija" >
+        </activity>
+
+        <activity
+            android:name=".NoviOglasActivity"
+            android:label="Novi oglas" >
+        </activity>
+
+        <activity
+            android:name=".NoviOglas2Activity"
+            android:label="Novi oglas" >
+        </activity>
+
+        <activity
+            android:name=".NoviOglas3Activity"
+            android:label="Novi oglas" >
+        </activity>
+
+        <activity
+            android:name=".TraziVoznjeActivity"
+            android:label="Pretraga vožnji" >
+        </activity>
+
+        <activity
+            android:name=".VoznjaInfoActivity"
+            android:label="Detalji vožnje">
+        </activity>
+
+        <activity
+            android:name=".KorisnikInfoActivity"
+            android:label="Podaci o korisniku">
+        </activity>
+
+    </application>
+
+</manifest>

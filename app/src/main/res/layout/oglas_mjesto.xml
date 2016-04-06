@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_material_light"
+    android:weightSum="3">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView2"
+        android:layout_margin="16dp"
+        android:layout_weight="2">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@color/bright_foreground_inverse_material_light"
+            android:elevation="8dp">
+
+            <EditText
+                style="@style/MyFont"
+                android:id="@+id/polazakTxt"
+                android:hint="Mjesto polaska"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                style="@style/MyFont"
+                android:id="@+id/odredisteTxt"
+                android:hint="Odredište"/>
+
+            <EditText
+                style="@style/MyFont"
+                android:inputType="date"
+                android:ems="10"
+                android:id="@+id/datumTxt"
+                android:hint="Datum polaska" />
+
+            <EditText
+                style="@style/MyFont"
+                android:inputType="time"
+                android:ems="10"
+                android:id="@+id/vrijemeTxt"
+                android:hint="Vrijeme polaska" />
+
+            <TextView
+                style="@style/MyLabel"
+                android:text="Troškovi po putniku"
+                android:id="@+id/trosakTxt"
+                android:layout_marginBottom="0dp"
+                android:paddingLeft="5dp" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioGroup">
+
+                <RadioButton
+                    style="@style/MyLabel"
+                    android:text="po dogovoru"
+                    android:id="@+id/dogovorBtn"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="14dp"
+                    android:layout_marginBottom="0dp"
+                    android:checked="false" />
+
+                <RadioButton
+                    style="@style/MyLabel"
+                    android:text="upiši cijenu"
+                    android:id="@+id/cijenaBtn"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="14dp"
+                    android:checked="false" />
+            </RadioGroup>
+
+            <EditText
+                style="@style/MyFont"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/cijenaTxt"
+                android:layout_width="114dp"
+                android:layout_marginLeft="55dp"
+                android:hint="00.00 KM"
+                android:visibility="gone" />
+
+            <Button
+                style="@style/MyButton"
+                android:text="Dalje"
+                android:id="@+id/daljeBtn"
+                android:layout_marginTop="20dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="3">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/material_deep_teal_500" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|bottom" >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp" >
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Azra Mahmutović"
+                    android:id="@+id/imePrezime"
+                    android:textSize="34sp"
+                    android:textColor="@color/bright_foreground_inverse_material_light"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="16dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:background="@color/primary_material_light">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@color/bright_foreground_inverse_material_light"
+            android:elevation="8dp"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:id="@+id/imageView12"
+                    android:src="@drawable/phone"
+                    android:layout_marginRight="25dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="062 445 339"
+                    android:id="@+id/userTelefon"
+                    android:layout_gravity="center"
+                    android:textSize="16sp"
+                    android:textColor="@color/primary_text_default_material_light" />
+
+            </LinearLayout>
+            <View style="@style/Divider" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:id="@+id/imageView13"
+                    android:src="@drawable/email"
+                    android:layout_marginRight="25dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="azramah6@gmail.com"
+                    android:id="@+id/userMail"
+                    android:textSize="16sp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/primary_text_default_material_light" />
+
+            </LinearLayout>
+            <View style="@style/Divider" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:id="@+id/linearLayout"
+                android:background="@drawable/abc_item_background_holo_light" >
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:id="@+id/imageView13"
+                    android:src="@drawable/facebook"
+                    android:layout_marginRight="25dp"
+                    android:contentDescription="facebookImg" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="mahmutovic.azra"
+                    android:id="@+id/userFb"
+                    android:textSize="16sp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/primary_text_default_material_light" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

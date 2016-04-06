@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="3"
+    android:background="@color/primary_material_light">
+    <!-- Main ListView
+         Always give id value as list(@android:id/list)
+    -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/accent_material_light">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Vožnje"
+            android:id="@+id/textView13"
+            android:layout_gravity="left|bottom"
+            android:textSize="34sp"
+            android:textColor="@color/bright_foreground_inverse_material_light"
+            android:textStyle="bold"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="8dp" />
+    </FrameLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bright_foreground_inverse_material_light" />
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_material_light"
+    android:alpha="0.87"
+    android:id="@+id/relativeL">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/postaviOglas"
+        android:layout_margin="16dp"
+        android:background="@color/bright_foreground_inverse_material_light"
+        android:elevation="8dp">
+
+        <Button
+            style="@style/MyButton"
+            android:text="Postavi oglas"
+            android:id="@+id/postaviBtn"
+            android:layout_below="@+id/infoTxt"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            style="@style/MyLabel"
+            android:text="Polazak fleksibilan za"
+            android:id="@+id/textView3"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="0dp" />
+
+        <EditText
+            style="@style/MyLabel"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/brDanaTxt"
+            android:hint="0 dana"
+            android:layout_alignTop="@+id/textView3"
+            android:layout_toRightOf="@+id/textView3"
+            android:layout_toEndOf="@+id/textView3" />
+
+        <TextView
+            style="@style/MyLabel"
+            android:text="Broj osoba"
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginRight="0dp" />
+
+        <EditText
+            style="@style/MyLabel"
+            android:id="@+id/infoTxt"
+            android:lines="5"
+            android:gravity="top"
+            android:hint="Dodatne informacije"
+            android:layout_below="@+id/textView4"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            style="@style/MyLabel"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/brMjestaTxt"
+            android:hint="1"
+            android:layout_below="@+id/brDanaTxt"
+            android:layout_toRightOf="@+id/textView3"
+            android:layout_toEndOf="@+id/textView3" />
+    </RelativeLayout>
+
+</RelativeLayout>

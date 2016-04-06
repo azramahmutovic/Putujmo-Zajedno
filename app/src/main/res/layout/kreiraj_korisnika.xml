@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_material_light"
+    android:alpha="0.87">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView3"
+        android:layout_margin="16dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bright_foreground_inverse_material_light"
+            android:elevation="8dp">
+
+            <EditText
+                style="@style/MyFont"
+                android:inputType="textPersonName"
+                android:id="@+id/imeKorisnika"
+                android:hint="Ime*"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                style="@style/MyFont"
+                android:inputType="textPersonName"
+                android:id="@+id/prezimeKorisnika"
+                android:hint="Prezime*" />
+
+            <EditText
+                style="@style/MyFont"
+                android:inputType="textEmailAddress"
+                android:id="@+id/emailKorisnika"
+                android:hint="E-mail*" />
+
+            <EditText
+                style="@style/MyFont"
+                android:inputType="textPassword"
+                android:id="@+id/passwordKorisnika"
+                android:password="false"
+                android:hint="Password*" />
+
+            <EditText
+                style="@style/MyFont"
+                android:inputType="phone"
+                android:id="@+id/telefonKorisnika"
+                android:hint="Telefon" />
+
+            <EditText
+                style="@style/MyFont"
+                android:id="@+id/fbKorisnika"
+                android:hint="Facebook profil" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="*obavezna polja"
+                android:id="@+id/textView6"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:alpha="0.87" />
+
+            <Button
+                style="@style/MyButton"
+                android:text="Spasi"
+                android:id="@+id/spasiDugme"
+                android:layout_marginTop="30dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

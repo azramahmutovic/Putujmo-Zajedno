@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="3">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/material_deep_teal_500">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|bottom">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imageView5"
+                    android:src="@mipmap/map"
+                    android:layout_marginLeft="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Sarajevo"
+                    android:id="@+id/polazakInfo"
+                    android:textSize="34sp"
+                    android:textColor="@color/bright_foreground_inverse_material_light"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imageView6"
+                    android:src="@mipmap/map"
+                    android:layout_marginLeft="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Mostar"
+                    android:id="@+id/odredisteInfo"
+                    android:textSize="34sp"
+                    android:textColor="@color/bright_foreground_inverse_material_light"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:id="@+id/nekiframe"
+        android:background="@color/primary_material_light">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView"
+            android:layout_margin="16dp"
+            android:background="@color/bright_foreground_inverse_material_light"
+            android:elevation="8dp"
+            android:fillViewport="false">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="16dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView7"
+                        android:src="@drawable/calendar_clock"
+                        android:layout_marginRight="25dp" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="26/08/2015 13:00"
+                            android:id="@+id/vrijemeInfo"
+                            android:textSize="16sp"
+                            android:textColor="@color/primary_text_default_material_light"
+                            android:layout_gravity="center_vertical" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Polazak fleksibilan za 3 dana"
+                            android:id="@+id/flexDanaInfo"
+                            android:textSize="14sp"
+                            android:textIsSelectable="false"
+                            android:textColor="@color/secondary_text_default_material_light" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <View style="@style/Divider" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:id="@+id/korisnikInfo"
+                    android:background="@drawable/abc_item_background_holo_light">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView8"
+                        android:src="@drawable/account"
+                        android:layout_marginRight="25dp" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Azra Mahmutović"
+                            android:id="@+id/korisnikIme"
+                            android:textSize="16sp"
+                            android:textColor="@color/link_text_material_light" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <View style="@style/Divider" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView9"
+                        android:src="@drawable/info_outline"
+                        android:layout_marginRight="25dp" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="2 mjesta"
+                            android:id="@+id/mjestoInfo"
+                            android:textSize="16sp"
+                            android:textColor="@color/primary_text_default_material_light" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Trošak po dogovoru"
+                            android:id="@+id/trosakInfo"
+                            android:textSize="16sp"
+                            android:textColor="@color/primary_text_default_material_light" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Neke dodatne informacije"
+                            android:id="@+id/dodatnoInfo"
+                            android:textSize="14sp"
+                            android:textColor="@color/secondary_text_default_material_light" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+</LinearLayout>

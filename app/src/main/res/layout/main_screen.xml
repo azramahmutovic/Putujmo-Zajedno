@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:id="@+id/mainscreen"
+    android:background="@drawable/xl"
+    android:alpha="0.87">
+
+    <!--  Sample Dashboard screen with Two buttons -->
+    <!--  Button to view all products screen -->
+
+    <Button
+        style="@style/MyButton"
+        android:id="@+id/btnSveVoznje"
+        android:text="Sve vožnje"
+        android:layout_marginTop="50dp" />
+
+    <!--  Button to create a new product screen -->
+    <Button
+        style="@style/MyButton"
+        android:text="Pretraži vožnje"
+        android:id="@+id/btnTraziVoznje"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        style="@style/MyButton"
+        android:id="@+id/btnPostaviOglas"
+        android:text="Postavi oglas" />
+
+</LinearLayout>

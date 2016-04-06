@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@mipmap/date"
+        android:layout_above="@+id/mjestaItem"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="2dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="17/07/2015"
+        android:id="@+id/trosakTxt"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:textColor="@color/primary_text_default_material_light" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Ponuda"
+        android:id="@+id/tipItem"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="2"
+        android:id="@+id/mjestaItem"
+        android:textSize="20dp"
+        android:layout_below="@+id/tipItem"
+        android:layout_alignRight="@+id/textView5"
+        android:layout_alignEnd="@+id/textView5"
+        android:textColor="@color/accent_material_light" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="mjesta"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignRight="@+id/tipItem"
+        android:layout_alignEnd="@+id/tipItem"
+        android:textSize="12dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:src="@mipmap/map"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView3"
+        android:src="@mipmap/map"
+        android:layout_below="@+id/polazakItem"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="2dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Sarajevo"
+        android:id="@+id/polazakItem"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_alignLeft="@+id/trosakTxt"
+        android:layout_alignStart="@+id/trosakTxt"
+        android:textSize="16dp"
+        android:textColor="#de000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Mostar"
+        android:id="@+id/odredisteItem"
+        android:textSize="16dp"
+        android:textColor="#de000000"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_alignLeft="@+id/polazakItem"
+        android:layout_alignStart="@+id/polazakItem"
+        android:layout_marginTop="2dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/idItem"
+        android:layout_alignTop="@+id/odredisteItem"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:visibility="gone" />
+
+</RelativeLayout>
+
